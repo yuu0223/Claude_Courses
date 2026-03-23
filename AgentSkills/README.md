@@ -39,10 +39,18 @@ description: Reviews Pull Requests for code quality. Use when reviewing PRs or c
 ...
 ```
 - 在撰寫 YAML 的時候可以包含以下項目：
-  - name(**require**): 這個 Skill 的名稱
-  - description(**require**): 這個 Skill 的任務描述，描述得越清楚越好
-  - allowed-tools(**optional**): Agent 在執行任務時無需請求，即可使用這些工具 e.g., READ → 在執行這個 skill 的時候只能讀取檔案，不能編輯。
-  - model(**optional**): 模型選用 e.g., sonnet
+  - name(**require**):
+
+    這個 Skill 的名稱
+  - description(**require**):
+
+    這個 Skill 的任務描述，描述得越清楚越好
+  - allowed-tools(**optional**):
+
+    Agent 在執行任務時無需請求，即可使用這些工具 e.g., READ → 在執行這個 skill 的時候只能讀取檔案，不能編輯。
+  - model(**optional**):
+
+    模型選用 e.g., sonnet
 
 > **Agent Skills 層級**
 - 當專案在使用 Skills 的時候，會遵照以下的層級來執行。
@@ -87,7 +95,9 @@ Priority for name conflicts: Enterprise → Personal → Project → Plugins
 → 清除快取並重新安裝
 
 → ```rm -/.claude/plugins/cache```
-→ ```skills-ref validate [your skill path]
+
+→ ```skills-ref validate [your skill path]```
 
 - Skills Runtime Error
+
 → ```chmod +x ./check-setup.py```
