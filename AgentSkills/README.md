@@ -69,17 +69,23 @@ Priority for name conflicts: Enterprise → Personal → Project → Plugins
 |Agent Skills|Hooks|
 |請求驅動(request-driven)|事件驅動(event-driven) e.g., save file|
 
-> ** Agent Skills 如何除錯**
+> **Agent Skills 如何除錯**
 - Skills 未能觸發
+
 → 請檢查你的描述與實際表達請求的方式是否一致
+
 → 加入 users 實際會使用的詞彙or關鍵字 e.g.,為什麼這個跑得這麼慢？
 
 - Skills 無法加載
+
 → 確認路徑、檔名是否都正確 (路徑一定要放在/skill_name/SKILL.md中，檔名一定要是SKILL.md)
+
 → 運行 ```claude --debug``` 可協助除錯
 
 - Skills 插件功能缺失
+
 → 清除快取並重新安裝
+
 → ```rm -/.claude/plugins/cache```
 → ```skills-ref validate [your skill path]
 
