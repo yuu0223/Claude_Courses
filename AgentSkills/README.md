@@ -67,7 +67,7 @@ Priority for name conflicts: Enterprise → Personal → Project → Plugins
 > **Agent Skills v.s. 其他 Claude tools**
 - Claude.md
 | Agent Skills | Claude.md |
-| --- | --- |
+| ---- | ---- |
 | 按需要載入，適合特定任務的專業知識（特定） | 每次都需要載入的知識（通用）e.g., 每次都不要更動到DB內的資料 |
 
 - Subagents
